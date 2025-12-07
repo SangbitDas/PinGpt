@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ChatGPT Pins</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        width: 250px;
+        padding: 15px;
+        margin: 0;
+      }
+
+      .full-page-btn {
+        margin-bottom: 15px;
+        transition: all 0.2s;
+      }
+
+      .full-page-btn:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(30, 136, 229, 0.3);
+      }
+
+      .full-page-btn:active {
+        transform: translateY(0);
+      }
+
+      h3 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: #333;
+      }
+
+      a {
+        display: block;
+        margin: 5px 0;
+        color: #1e88e5;
+        text-decoration: none;
+      }
+
+      .empty-state {
+        padding: 15px;
+        text-align: center;
+        color: #666;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom: 15px;">
+      <button id="fullPageViewBtn" style="
+        background: #1e88e5;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 12px;
+        width: 100%;
+      ">Full Page View</button>
+    </div>
+
+    <h3>Pinned Chats</h3>
+    <div id="pinned"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
